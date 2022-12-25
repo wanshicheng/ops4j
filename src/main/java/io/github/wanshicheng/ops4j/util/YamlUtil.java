@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class YamlUtils {
+public class YamlUtil {
     public static <T> T load(String path, Class<T> type) throws IOException {
         Yaml yaml = new Yaml();
         byte[] bytes = Files.readAllBytes(Paths.get(path));
